@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style type="text/css">
+        h2 {
+            color: #00264d;
+            font-family: 'Lobster', cursive;
+            margin-top: 30px;
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 18px; 
+            color: rgb(0, 0, 0); 
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px;
+            background-image: url('/mnt/data/122.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        .explore-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #004d99, #0066cc);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            transition: all 0.4s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+        }
+
+        .explore-button:hover {
+            background: linear-gradient(135deg, #0066cc, #004d99);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        
+        #toggle-content {
+            display: none;
+        }
+
+        
+        #toggle-content:checked ~ .more-content {
+            display: block;
+        }
+
+        
+        .more-content {
+            display: none;
+            margin-top: 20px;
+            color: #e6f7ff; 
+        }
+
+        .more-content h2 {
+            color: #ffcc00; 
+        }
+
+        .more-content p {
+            font-size: 18px; 
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="Login Page.html">Turism</a></div>
+        <ul class="nav-items">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="Districts.html">Districts</a></li>
+            <li><a href="Service.html" >Services</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Contact us.html">Contact Us</a></li>
+        </ul>
+        <button class="search-box"><a href="Login Page.html">LogOut</a></button>
+    </nav>
+    <div class="about-container">
+        <div class="about-content">
+            <h2>Welcome to West Bengal Tourism</h2>
+            <p>
+                Welcome to the official website of West Bengal Tourism, where history, culture, and natural beauty blend into an unforgettable experience! West Bengal, located in the eastern part of India, is a state known for its rich cultural heritage, scenic landscapes, and vibrant festivals. The state offers a diverse range of experiences to all kinds of travelers—from majestic mountains in the north to serene beaches in the south, and from dense mangrove forests to bustling city life.
+            </p>
+
+            <h2>Discover the Land of Many Wonders</h2>
+            <p>
+                West Bengal is truly a treasure trove of diversity. The capital city, Kolkata, often referred to as the "Cultural Capital of India," is a hub of art, literature, and history. It is home to iconic landmarks like the Victoria Memorial, Howrah Bridge, and the Indian Museum, which offer a glimpse into the colonial past and the state's journey to modernity.
+            </p>
+
+            <h2>Natural Beauty</h2>
+            <p>
+                Nature lovers will find West Bengal an exciting destination. The northern part of the state is home to the Himalayas, where hill stations like Darjeeling and Kalimpong provide breathtaking views of Mount Kanchenjunga. In the southern part, the Sundarbans—a UNESCO World Heritage site—boasts the largest mangrove forest in the world and is home to the elusive Royal Bengal Tiger.
+            </p>
+
+            <h2>Cultural Richness</h2>
+            <p>
+                From Rabindranath Tagore’s Santiniketan to the vibrant festivals of Durga Puja, West Bengal’s cultural scene is deeply rooted in traditions and arts. Visitors can enjoy classical music, dance, theater, and folk traditions that have been passed down through generations. Don’t miss the local crafts and textiles, including the famous Baluchari and Kantha sarees.
+            </p>
+
+            <h2>Culinary Delights</h2>
+            <p>
+                West Bengal is also a paradise for food lovers. Known for its delicious sweets like Rasgulla and Sandesh, the cuisine is an eclectic mix of flavors. Don’t forget to try the famous Bengali fish curry, street foods of Kolkata, and a variety of vegetarian and non-vegetarian dishes that make the cuisine here truly unique.
+            </p>
+
+            <h2>Plan Your Journey</h2>
+            <p>
+                Whether you are a history buff, a nature enthusiast, or simply looking to relax, West Bengal offers something for everyone. Plan your journey today and explore the charm, warmth, and beauty that make West Bengal a destination like no other. Explore our site to discover more about what to do, where to stay, and how to get around.
+            </p>
+
+            <p>
+                We look forward to welcoming you to West Bengal, a land where the past meets the future in harmony and where every traveler leaves with memories to cherish forever.
+            </p>
+            <input type="checkbox" id="toggle-content" />
+            <label for="toggle-content" class="explore-button">Explore More</label>
+
+            <div class="more-content">
+                <h2>More to Explore</h2>
+                <p>West Bengal is home to a vast array of experiences for every type of traveler. From the snow-capped mountains of Darjeeling to the unique culture of Santiniketan, you’ll find something to love. Take a boat ride in the Sundarbans, experience the vibrant energy of Kolkata's streets, or relax at the peaceful beaches of Digha. There’s always something waiting to be discovered!</p>
+
+                <h2>Adventure Awaits</h2>
+                <p>If you're an adventure lover, West Bengal has plenty to offer. Whether it’s trekking in the Himalayan foothills, exploring the dense forests of Dooars, or wildlife spotting in Jaldapara, there's no shortage of thrilling activities. Each destination is unique and offers a perfect blend of nature and excitement for those seeking adventure.</p>
+
+                <h2>Historical Significance</h2>
+                <p>Immerse yourself in the rich history of West Bengal. Visit the remnants of ancient empires, British colonial architecture, and historical landmarks that tell the story of India’s past. Explore the ruins of Gour, the ancient capital of Bengal, or the colonial charm of Kolkata with its grand Victorian buildings and narrow streets full of stories.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <i>&copy; 2024 West Bengal Tourism. Designed by Gour Sardar.</i>
+    </footer>
+</body>
+</html>

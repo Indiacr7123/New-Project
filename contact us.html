@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style type="text/css">
+
+    .contact-us {
+        padding: 40px;
+        margin-top: 40px;
+        }
+    
+    .contact-us h2 {
+        text-align: center;
+        color: orange;
+        font-size: 40px;
+        }
+    
+    .contact-form {
+         max-width: 600px;
+         margin: 0 auto;
+         padding: 20px;
+         border-radius: 8px;
+            }
+    
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        }
+    .contact-form input[type="submit"] {
+        background-color: orange;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    .contact-form input[type="submit"]:hover {
+        background-color: #3498db;
+    }
+
+    </style>
+</head>
+<head>
+    <nav class="navbar">
+        <div class="logo"><a href="Login Page.html">Turism</a></div>
+        <ul class="nav-items">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="Districts.html">Districts</a></li>
+            <li><a href="Service.html" >Services</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Contact us.html">Contact Us</a></li>
+        </ul>
+        <button class="search-box"><a href="Login Page.html">LogOut</a></button>
+    </nav>
+    <section class="contact-us">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <form action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="contact">Your Contact Number:</label>
+                <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
+
+                <label for="feedback">Your Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Enter your feedback"></textarea>
+
+                <label for="attachment">Any Attachment (optional):</label>
+                <input type="file" id="attachment" name="attachment">
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 West Bengal Tourism. Designed by Gour Sardar.</p>
+    </footer>
+</head>
+<body>
+</body>
+</html>
