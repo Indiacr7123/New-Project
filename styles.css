@@ -1,0 +1,186 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #595757;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo styling */
+.logo a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2.5em; 
+    font-family: "Airmole Stripe";
+}
+
+.logo a:hover {
+    transform: scale(1.1);
+    color: #00fffb;
+    /* background-color: #00fffb; */
+    /* margin: 10px;
+    box-shadow: 0 0 10px 5px rgb(0, 255, 251); */
+
+}
+
+/* Navbar items styling */
+.nav-items {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-items li {
+    margin: 0 5px;
+    padding: 1px;
+}
+
+.nav-items a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    color: rgb(255, 255, 255);
+    position: relative;
+    padding: 10px 10px; /* Add padding to create space between text and border */
+}
+
+/* Active link styling */
+.nav-items a:hover {
+    transform: scale(1.1);
+    color: #000000;
+    background-color: #00fffb;
+    box-shadow: 0 0 10px 5px rgb(0, 255, 251);
+}
+
+/* Animation styling for specific items - disabled on hover */
+.nav-items li:nth-child(5) a:not(:hover)::before, /* Home */
+.nav-items li:nth-child(4) a:not(:hover)::before, /* Districts */
+.nav-items li:nth-child(3) a:not(:hover)::before, /* Services */
+.nav-items li:nth-child(2) a:not(:hover)::before, /* About Us */
+.nav-items li:nth-child(1) a:not(:hover)::before /* Contact Us */ {
+    content: "";
+    position: absolute;
+    top: 1px; /* Adjust positioning to keep border outside padding */
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    border: 3px solid #00b8b5; /* Pink border color */
+    box-shadow: 0 0 5px #00b8b5, 0 0 10px #00b8b5;
+    animation: neon-border 5s linear infinite;
+}
+
+/* Neon border animation */
+@keyframes neon-border {
+    0% {
+        clip-path: inset(0% 100% 0% 0%);
+    }
+    25% {
+        clip-path: inset(0% 0% 100% 0%);
+    }
+    50% {
+        clip-path: inset(0% 0% 0% 100%);
+    }
+    75% {
+        clip-path: inset(100% 0% 0% 0%);
+    }
+    100% {
+        clip-path: inset(0% 100% 0% 0%);
+    }
+}
+
+
+/* Search box styling */
+/* .search-box {
+    display: flex;
+    font-family: 'Times New Roman';
+} */
+/* 
+.search-box input {
+    padding: 8px;
+    border: none;
+    border-radius: 30px;
+    width: 300px;
+}
+
+.search-box input:hover {
+    box-shadow: 0 0 20px 5px rgb(255, 255, 255);
+    color: #5500ff;
+} */
+
+.navbar .search-box{
+    width: 130px;
+    height: 40px;
+    background-color: #ffffff;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+
+.navbar .search-box a{
+    text-decoration: none;
+    color:#000000;
+    transition: .3s ease;
+    font-family: 'Times New Roman';
+
+}
+
+.search-box:hover{
+
+    background-color: #00fffb;
+    color: #000000;
+    transform: scale(1.1);
+}
+/* Content and footer styling */
+footer {
+    background-color: #1a2b4c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto;
+}
+.search-results {
+    margin-top: 20px;
+    color: #333;
+}
+
+.search-result-item {
+    padding: 5px;
+    margin: 5px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
