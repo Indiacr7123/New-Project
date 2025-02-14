@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup</title>
+    <style type="text/css">
+        /* CSS styles from your original code */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url("C:/Users/Gour/Desktop/Webpage/Image/wp3235764.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            border-radius: 10px;
+            width: 400px;
+            overflow: hidden;
+        }
+
+        .form-container {
+            position: relative;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            cursor: pointer;
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #f6f6f6;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        #login:checked ~ .forms .login-form {
+            display: block;
+        }
+
+        #signup:checked ~ .forms .signup-form {
+            display: block;
+        }
+
+        .forms {
+            position: relative;
+        }
+
+        form {
+            display: none;
+            text-decoration: none;
+        }
+
+        form h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        form input {
+            width: 100%;
+            padding: 12px;
+            margin: 15px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            color: white;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            background-color: #ff7300;
+        }
+
+        form button:active {
+            background-color: #ff7200;
+            box-shadow: 0 0 10px #ff7300;
+        }
+
+        form a {
+            font-size: 20px;
+            display: block;
+            margin-top: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:active {
+            transform: scale(1.1);
+            background-color: #ff7300;
+            box-shadow: 0 0 20px 5px #ff7300;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <input type="radio" name="tab" id="login" checked>
+            <input type="radio" name="tab" id="signup">
+            
+            <div class="tabs">
+                <label for="login" class="tab">Login</label>
+                <label for="signup" class="tab">Sign Up</label>
+            </div>
+
+            <div class="forms">
+                <!-- Login Form -->
+                <form class="login-form" action="index.html" method="POST">
+                    <h1>Login</h1>
+                    <input type="email" placeholder="Email" name="email" required>
+                    <input type="password" placeholder="Password" name="password" required>
+                    <button type="submit">Login</button>
+                    <a href="#">Forgot Password?</a>
+                </form>
+
+                <!-- Sign Up Form -->
+                <form class="signup-form" action="index.html" method="POST">
+                    <h1>Sign Up</h1>
+                    <input type="text" placeholder="Name" name="name" required>
+                    <input type="email" placeholder="Email" name="email" required>
+                    <input type="password" placeholder="New Password" name="new_password" required>
+                    <input type="password" placeholder="Confirm Password" name="confirm_password" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <a href="Login Page.html" class="back-button">Back</a>
+</body>
+</html>

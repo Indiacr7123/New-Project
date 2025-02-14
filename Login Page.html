@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West Bengal</title>
+    <link rel="stylesheet" type="text/css" href="styles1.css">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: white;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #595757;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Logo styling */
+        .logo a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 2.5em;
+            font-family: "Airmole Stripe";
+        }
+
+        .logo a:hover {
+            transform: scale(1.1);
+            color: #00fffb;
+        }
+/* Search box styling */
+.search-box {
+    display: flex;
+    font-family: 'Times New Roman';
+}
+
+.search-box input {
+    padding: 8px;
+    border: none;
+    border-radius: 30px;
+    width: 400px;
+}
+
+.search-box input:hover {
+    box-shadow: 0 0 20px 5px rgb(255, 255, 255);
+    color: #5500ff;
+}
+
+.search-box button {
+    padding: 5px 10px;
+    background-color: #ffffff;
+    border: none;
+    margin: 0 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-box button:hover {
+    background-color: #00fffb;
+    color: #000000;
+    transform: scale(1.1);
+}
+
+
+.navbar .login-btn{
+    width: 130px;
+    height: 40px;
+    background-color: #ffffff;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+
+.navbar .login-btn a{
+    text-decoration: none;
+    color:#000000;
+    transition: .3s ease;
+    font-family: 'Times New Roman';
+
+}
+
+.login-btn:hover{
+
+    background-color: #00fffb;
+    color: #000000;
+    transform: scale(1.1);
+}
+
+/* .login-btn:active{
+    background-color: #00b8b5;
+    box-shadow: 0 0 20px 5px rgb(0, 255, 252);
+} */
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("C:/Users/Gour/Desktop/Webpage/Image/wp3235764.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.content{
+    margin-top: -35px;
+    width: auto;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: 'Bookman Old Style';
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    color: #000;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 70px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+    color: #000000;
+    padding-bottom: 50px;
+    padding-top: 5px;
+}
+
+
+.content span{
+    color: #000000;
+    font-size: 65px;
+    font-family: 'Edwardian Script ITC';
+}
+
+/* Content and footer styling */
+footer {
+    background-color: #1a2b4c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto;
+}
+
+    </style>
+</head>
+<head>
+    <body>
+        <nav class="navbar">
+            <div class="logo"><a href="Login Page.html">Turism</a></div>
+            <div class="search-box">
+                <input type="text" placeholder="Type to text">
+                <button>Search</button>
+            </div>
+            <button class="login-btn"><a href="Login& Signup.html">Login/Sign-up</a></button>
+        </nav>
+    <main>
+        <div class="content">
+            <h1>Welcome <br><span>West Bengal</span><br><span>Tourism</span>
+            </h1>
+            <p class="par">West Bengal, located in eastern India, is known for its rich culture, vibrant festivals, and diverse landscapes. Kolkata, the capital, boasts colonial architecture and artistic heritage. The Sundarbans, home to the Royal Bengal Tiger, offers breathtaking natural beauty. Renowned for its literature, music, and cuisine, West Bengal is a cultural gem.</p>
+        </div>
+    </main>
+    
+    <footer>
+        <i>&copy; 2024 West Bengal Tourism. Designed by Gour Sardar.</i>
+    </footer>
+</head>
+<body>
+</body>
+</html>
